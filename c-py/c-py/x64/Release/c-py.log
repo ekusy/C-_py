@@ -1,0 +1,17 @@
+﻿平成 28/1/5 19:07:42 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "E:\git\C_py\c-py\c-py\c-py.vcxproj" (Build ターゲット)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IC:\Python33\include /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt main.cpp
+         main.cpp
+     1>c:\python33\include\pymath.h(22): warning C4273: 'round' : dll リンクが一貫していません。
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\math.h(516) : 'round' の前の定義を確認してください
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"E:\git\C_py\c-py\x64\Release\c-py.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\Python33\libs python33.lib python3.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\git\C_py\c-py\x64\Release\c-py.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\git\C_py\c-py\x64\Release\c-py.lib" /MACHINE:X64 x64\Release\main.obj
+         コード生成しています。
+         コード生成が終了しました。
+         c-py.vcxproj -> E:\git\C_py\c-py\x64\Release\c-py.exe
+     1>プロジェクト "E:\git\C_py\c-py\c-py\c-py.vcxproj" (Build ターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+
+経過時間 00:00:00.42
