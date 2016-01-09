@@ -15,17 +15,7 @@ int main()
 	rec = PyObject_CallObject(pFunc4, NULL);
 	printf("%s\n", PyString_AsString(rec));
 	PyObject_CallObject(pFunc1, NULL);
-	while (1){
-		rec = PyObject_CallObject(pFunc2, NULL);
-		std::vector<std::string> str;
-		split(rec, ",", str);
-		printf("%s\n", PyString_AsString(rec));
-		if (GetAsyncKeyState(VK_ESCAPE)){
-			//printf("GetKey\n");
-
-			break;
-		}
-	}
+		
 	PyObject_CallObject(pFunc3, NULL);
 	Py_Finalize();
 	return 0;
