@@ -4,18 +4,19 @@ int main()
 {
 	PyObject *pName,*pModule, *pFunc1,*pFunc2,*pFunc3,*pFunc4;
 	Py_Initialize();
+
 	pName = PyUnicode_FromString("ser");
 	pModule = PyImport_Import(pName);
 	pFunc1 = PyObject_GetAttrString(pModule, "serialOpen");
 	pFunc2 = PyObject_GetAttrString(pModule, "serialReadLine");
 	pFunc3 = PyObject_GetAttrString(pModule, "serialClose");
 	pFunc4 = PyObject_GetAttrString(pModule, "testFunc");
-	PyObject_CallObject(pFunc4, NULL);
-	PyObject *rec;
-	rec = PyObject_CallObject(pFunc4, NULL);
-	printf("%s\n", PyString_AsString(rec));
 	PyObject_CallObject(pFunc1, NULL);
-		
+	for (int i = 0; i < 100; i++){
+		PyObject *rec;
+		rec = PyObject_CallObject(pFunc2, NULL);
+		printf("%s\n", PyString_AsString(rec));
+	}
 	PyObject_CallObject(pFunc3, NULL);
 	Py_Finalize();
 	return 0;
